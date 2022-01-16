@@ -55,4 +55,5 @@
 - [Protobuf](https://developers.google.com/protocol-buffers/docs/overview)
 - [Go Proto plugins](https://grpc.io/docs/languages/go/quickstart/#prerequisites)
 - [grpc_cli](https://github.com/grpc/grpc/blob/master/doc/command_line_tool.md)
-- [grpc tutorial](https://grpc.io/docs/tutorials/basic/)
+- [grpc tutorial](https://grpc.io/docs/languages/go/basics/)
+- [grpc gateway](https://github.com/grpc-ecosystem/grpc-gateway) for REST API via gRPC server

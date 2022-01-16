@@ -8,8 +8,8 @@ generate:
 
 .PHONY: build
 build:
-	go build -o bin/server server.go
-	go build -o bin/client client.go
+	go build -o bin/server server.go && echo "generated ./bin/server"
+	go build -o bin/client client.go && echo "generated ./bin/client"
 
 .PHONY: run
 run: build

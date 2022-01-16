@@ -43,5 +43,6 @@ type mathServer struct {
 }
 
 func (s *mathServer) Add(ctx context.Context, in *pb.MathRequest) (*pb.MathResponse, error) {
+	log.Println("Add called with ", in.Num1, in.Num2)
 	return &pb.MathResponse{Value: in.Num1 + in.Num2}, nil
 }
