@@ -17,4 +17,4 @@ run: build
 
 .PHONY: client
 client: build
-	./bin/client
+	./bin/client -num1 20 -num2 5

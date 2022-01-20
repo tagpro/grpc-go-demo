@@ -17,6 +17,7 @@
     - [go](https://formulae.brew.sh/formula/go)
     - [protoc](https://formulae.brew.sh/formula/protobuf)
     - [grpc and go proto plugins](https://grpc.io/docs/languages/go/quickstart/#prerequisites) (Required to compile the proto files into go code)
+    - `brew install grpc` to install `grpc_cli` tool
 
 ### Installation
 
