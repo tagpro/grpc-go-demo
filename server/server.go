@@ -46,3 +46,8 @@ func (s *mathServer) Add(ctx context.Context, in *pb.MathRequest) (*pb.MathRespo
 	log.Println("Add called with ", in.Num1, in.Num2)
 	return &pb.MathResponse{Value: in.Num1 + in.Num2}, nil
 }
+
+func (s *mathServer) Subtract(ctx context.Context, in *pb.MathRequest) (*pb.MathResponse, error) {
+	log.Println("Subtract called with ", in.Num1, in.Num2)
+	return &pb.MathResponse{Value: in.Num1 - in.Num2}, nil
+}

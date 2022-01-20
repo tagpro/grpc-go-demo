@@ -4,7 +4,7 @@ option go_package = "github.com/tagpro/grpc-go-demo/proto;maths";
 
 service MathService {
   rpc Add(MathRequest) returns (MathResponse) {}
-//   rpc Subtract(MathRequest) returns (MathResponse) {}
+  rpc Subtract(MathRequest) returns (MathResponse) {}
 }
 
 message MathRequest {
