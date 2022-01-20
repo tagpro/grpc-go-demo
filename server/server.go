@@ -7,8 +7,8 @@ import (
 
 	pb "github.com/tagpro/grpc-go-demo/proto"
 
-	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+	"google.golang.org/grpc/xds"
 )
 
 const port = ":8000"
@@ -24,7 +24,7 @@ func main() {
 			log.Println(err)
 		}
 	}(lis)
-	server := grpc.NewServer()
+	server := xds.NewGRPCServer()
 	reflection.Register(server)
 
 	// Register API v1

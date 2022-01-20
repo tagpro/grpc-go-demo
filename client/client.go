@@ -7,10 +7,13 @@ import (
 
 	pb "github.com/tagpro/grpc-go-demo/proto"
 	"google.golang.org/grpc"
+
+	// install xDS balancers and resolovers
+	_ "google.golang.org/grpc/xds"
 )
 
 var (
-	server     = "localhost:8000"
+	server     = "xds:///localhost:8080"
 	num1, num2 int64
 )
 
@@ -21,7 +24,7 @@ func main() {
 	flag.Parse()
 
 	// Set up a connection to the server.
-	conn, err := grpc.Dial("localhost:8000", grpc.WithInsecure())
+	conn, err := grpc.Dial(server, grpc.WithInsecure())
 	if err != nil {
 		log.Fatal(err)
 	}

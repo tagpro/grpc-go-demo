@@ -1,0 +1,16 @@
+{
+    "xds_servers": [
+      {
+        "server_uri": "localhost:8080",
+        "channel_creds": [
+          {
+            "type": "insecure"
+          }
+        ],
+        "server_features": ["xds_v3"]
+      }
+    ],
+    "node": {},
+    "grpc_server_resource_name_id": "grpc/server",
+    "server_listener_resource_name_template": "grpc/server=xds.resource.listening_address=8080"
+  }
